@@ -1,0 +1,43 @@
+# Data (place NewspaperChurn.csv locally; never commit real data)
+data/*.csv
+data/*.xlsx
+
+# Generated outputs
+outputs/figures/*.png
+outputs/models/*.pkl
+outputs/reports/*.csv
+outputs/reports/*.md
+outputs/reports/*.docx
+outputs/augmented_datasets/*.csv
+outputs/llm_augmentation/
+outputs/llm_augmentation_logs/
+!outputs/figures/.gitkeep
+!outputs/models/.gitkeep
+!outputs/reports/.gitkeep
+!outputs/augmented_datasets/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# CTGAN / LightGBM working directories
+catboost_info/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
